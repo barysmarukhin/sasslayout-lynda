@@ -16,7 +16,7 @@ var env,
     outputDir,
     sassStyle;
 
-env = 'development';
+env = 'production';
 
 if (env==='development') {
   outputDir = 'builds/development/';
@@ -51,11 +51,12 @@ gulp.task('compass', function() {
       sass: 'components/sass',
       css: outputDir + 'css',
       image: outputDir + 'images',
+      sourcemap: true,
       style: sassStyle,
       require: ['susy', 'breakpoint']
     })
     .on('error', gutil.log))
-//    .pipe(gulp.dest( outputDir + 'css'))
+    //.pipe(gulp.dest( outputDir + 'css'))
     .pipe(connect.reload())
 });
 

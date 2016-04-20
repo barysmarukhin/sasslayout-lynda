@@ -4,9 +4,8 @@
   "description": "A website that uses single page responsive CSS with Sass, Compass, Susy 2, etc",
   "repository": {
     "type": "git",
-    "url": "https://github.com/planetoftheweb/responsive.git"
   },
-  "author": "Ray Villalobos",
+  "author": "Barys Marukhin",
   "devDependencies": {
     "gulp": "^3.8.7",
     "gulp-util": "^2.2.20",
